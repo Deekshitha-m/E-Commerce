@@ -54,7 +54,7 @@ const DropdownLinks = [
 const Navbar = ({ handleOrderPopup }) => {
   return (
     <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
-      {/* upper Navbar */}
+
       <div className="bg-primary/40 py-2">
         <div className="container flex justify-between items-center">
           <div>
@@ -63,8 +63,6 @@ const Navbar = ({ handleOrderPopup }) => {
               Shopsy
             </a>
           </div>
-
-          {/* search bar */}
           <div className="flex justify-between items-center gap-4">
             <div className="relative group hidden sm:block">
               <input
@@ -75,7 +73,7 @@ const Navbar = ({ handleOrderPopup }) => {
               <IoMdSearch className="text-gray-500 group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3" />
             </div>
 
-            {/* order button */}
+     
             <button
               onClick={() => handleOrderPopup()}
               className="bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group"
@@ -86,14 +84,14 @@ const Navbar = ({ handleOrderPopup }) => {
               <FaCartShopping className="text-xl text-white drop-shadow-sm cursor-pointer" />
             </button>
 
-            {/* Darkmode Switch */}
+        
             <div>
               <DarkMode />
             </div>
           </div>
         </div>
       </div>
-      {/* lower Navbar */}
+  
       <div data-aos="zoom-in" className="flex justify-center">
         <ul className="sm:flex hidden items-center gap-4">
           {Menu.map((data) => (
@@ -106,7 +104,7 @@ const Navbar = ({ handleOrderPopup }) => {
               </a>
             </li>
           ))}
-          {/* Simple Dropdown and Links */}
+     
           <li className="group relative cursor-pointer">
             <a href="#" className="flex items-center gap-[2px] py-2">
               Trending Products
